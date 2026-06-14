@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapistrina Games | Aprende Jugando</title>
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos amigables -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN (HUD) -->
+    <header class="hud-header">
+        <div class="hud-left">
+            <div class="logo-container">
+                <img src="logo/logo.png" alt="Chapistrina Games Logo" class="hud-logo">
+            </div>
+            <div class="hud-stat">
+                <i class="fas fa-star"></i> Nivel: <span class="neon-text">1</span>
+            </div>
+            <div class="hud-stat">
+                <i class="fas fa-bolt"></i> Exp: <span class="neon-text">0/100</span>
+            </div>
+        </div>
+        
+        <nav class="hud-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Juegos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        
+        <div class="hud-right">
+            <div class="cart-icon" id="cart-btn">
+                <i class="fas fa-backpack"></i> <!-- Mochila en lugar de carrito -->
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (BANNER PRINCIPAL) -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>AVENTURA DE <br><span>LECTOESCRITURA</span></h1>
+            <p>Videojuegos educativos diseñados para niños en edad preescolar. ¡Aprender las vocales y palabras mágicas nunca fue tan divertido!</p>
+            <a href="#juegos" class="btn-neon">Empezar a Jugar</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS / JUEGOS -->
+    <main class="container" id="juegos">
+        <h2 class="section-title">Nuestros <span>Juegos</span></h2>
+        
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <div class="badge">Nivel 1</div>
+                <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500&auto=format&fit=crop&q=60" alt="Niños jugando y aprendiendo">
+                <div class="product-info">
+                    <h3>El Rescate de las Vocales</h3>
+                    <p class="description">Ayuda a la mascota a encontrar las vocales perdidas en el bosque mágico.</p>
+                    <p class="price">$150.00</p>
+                    <button class="add-to-cart-btn" data-name="El Rescate de las Vocales" data-price="150">Añadir a la Mochila</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="badge">Nuevo</div>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&auto=format&fit=crop&q=60" alt="Aprender letras">
+                <div class="product-info">
+                    <h3>Palabras Mágicas</h3>
+                    <p class="description">Forma tus primeras palabras y descubre los hechizos ocultos.</p>
+                    <p class="price">$180.00</p>
+                    <button class="add-to-cart-btn" data-name="Palabras Mágicas" data-price="180">Añadir a la Mochila</button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="badge">Avanzado</div>
+                <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=500&auto=format&fit=crop&q=60" alt="Libro de aventuras">
+                <div class="product-info">
+                    <h3>Cuentos Interactivos</h3>
+                    <p class="description">Lee, escucha y decide el final de estas increíbles historias animadas.</p>
+                    <p class="price">$200.00</p>
+                    <button class="add-to-cart-btn" data-name="Cuentos Interactivos" data-price="200">Añadir a la Mochila</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <p>&copy; 2026 <strong>Chapistrina Games</strong>. Diversión y aprendizaje sin límites.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
